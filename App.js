@@ -6,7 +6,7 @@ import {
   createBottomTabNavigator,
   createDrawerNavigator
 } from 'react-navigation'
-
+import RegisterScreen from './Screens/RegisterScreen'
 import AntDesign from '@expo/vector-icons/AntDesign';
 import Foundation from '@expo/vector-icons/Foundation';
 import Entypo from '@expo/vector-icons/Entypo';
@@ -72,6 +72,9 @@ const RootStack = createStackNavigator(
   {
     Main: {
       screen: LoginScreen,
+    },
+    Register: {
+      screen: RegisterScreen,
     },
     MyModal: {
       screen: TabPages,
